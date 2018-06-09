@@ -1,0 +1,67 @@
+body {
+	font-family: "Cinzel", Garamond;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+}
+#img {
+	z-index: -1;
+	position: fixed;
+	top: 0px; 
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+#roll_button, .button_choices {
+	font-family: "Cinzel", Garamond;
+	float: right;
+}
+#roll_button {
+	font-size: 500%;
+}
+.button_choices {
+	font-size: 100%;
+}
+#computer_choice, #winner {
+	text-align: center;
+	font-size: 150%;
+}
+button:active, button:hover {
+	color: white;
+	background-color: black;
+}
+.reset {
+	text-align: center;
+}
+#reset_button {
+	font-size: 120%; 
+	font-family: Garamond;
+}
+.names {
+	font-size: 200%;
+}
+#title_of_page {
+	font-family: "Faster One", Garamond;
+	font-size: 250%;
+	text-align: center;
+}
+#red {
+	color: red;
+}
+#gray {
+	color: gray;
+}
+#play_button {
+	text-align: center;
+	padding: 10%;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-family: "Cinzel", Garamond;
+	font-size: 150%;
+}
+a:hover {
+	color: gray;
+	font-size: 300%;
+}

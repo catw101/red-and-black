@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--Catelen Wu-->
+<html>
+
+	<head>
+	
+		<title>Red and Black</title>		
+		
+		<script src = "utility file.js"></script>
+		<script src = "index.js"></script>
+		
+		<link rel = "stylesheet" href = "index.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Faster+One">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+		
+	</head>
+	
+	<body onload="initialize();">
+		<img id = "img" src = "img.jpg"/>
+		
+		<p id = "title_of_page"><span id = "red">RED</span><span id = "gray"> AND</span> BLACK</p>
+		<div class = "names">Player:</div><br/>
+		<div>Number of Red Tokens: <span id = "num_r">10</span></div><br/>
+		<div>Number of Black Tokens: <span id = "num_b">10</span></div><br/>
+		<div>RED DIE: <span class = "red_token"></span></div><br/>
+		<div>BLACK DIE: <span class = "black_token"></span></div></br/>
+		
+		<button id = "roll_button" onclick = "getRandomNum();">ROLL</button>
+		
+		<button class = "button_choices" onclick = "removeRedAddBlack();">Remove <span class = "red_token"></span> Red Tokens from Your Side, Add <span class = "black_token"></span> Black Tokens to Opponent's Side</button>
+		
+		<button class = "button_choices" onclick = "addRedRemoveBlack();">Add <span class = "red_token"></span> Red Tokens to Your Side, Remove <span class = "black_token"></span> Black Tokens from Opponent's Side</button>
+		
+		<button class = "button_choices" onclick = "removeBlackaddRed();">Remove <span class = "black_token"></span> Black Tokens from Your Side, Add <span class = "red_token"></span> Red Tokens to Opponent's Side</button>
+		
+		<button class = "button_choices" onclick = "addBlackremoveRed();">Add <span class = "black_token"></span> Black Tokens to Your Side, Remove <span class = "red_token"></span> Red Tokens from Opponent's Side</button>
+
+		<div class = "names">Computer:</div><br/>
+		<div>Number of Red Tokens: <span id = "num_r_comp">10</span></div><br/>
+		<div>Number of Black Tokens: <span id = "num_b_comp">10</span></div><br/>
+		<div>RED DIE FOR COMP: <span id = "red_token_comp"></span></div><br/>
+		<div>BLACK DIE FOR COMP: <span id = "black_token_comp"></span></div>
+		
+		<p id = "computer_choice" class = "comp_style"></p>
+		<p id = "winner"></p>
+		<p id = "reset"><button id = "reset_button" onclick = "reset();">Reset</button></p>	
+		
+	</body>
+	
+</html>
